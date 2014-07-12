@@ -24,7 +24,6 @@ public class Main extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        getConfig().options().copyDefaults(true);
         saveDefaultConfig();
         this.getServer().getPluginManager().registerEvents(this, this);
         Bukkit.getScheduler().scheduleSyncRepeatingTask(this, new BukkitRunnable() {
